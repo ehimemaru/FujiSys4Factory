@@ -1,0 +1,1008 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FujiSysForFactory3
+</name>
+</assembly>
+<members>
+<member name="T:FujiSysForFactory3.StartUpDataSet.権限有社員パスdtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.StartUpDataSet.社員権限画面dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.StartUpDataSet.権限有社員パスdtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.StartUpDataSet.社員権限画面dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.StartUpDataSet.権限有社員パスdtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.StartUpDataSet.社員権限画面dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.StartUpDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FujiSysForFactory3.StartUpDataSetTableAdapters.権限有社員パスdtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.StartUpDataSetTableAdapters.社員権限画面dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:FujiSysForFactory3.StartUpDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(FujiSysForFactory3.StartUpDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:FujiSysForFactory3.StartUpDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(FujiSysForFactory3.StartUpDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:FujiSysForFactory3.StartUpDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(FujiSysForFactory3.StartUpDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:FujiSysForFactory3.StartUpDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:FujiSysForFactory3.StartUpDataSetTableAdapters.TableAdapterManager.UpdateAll(FujiSysForFactory3.StartUpDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:FujiSysForFactory3.StartUpDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:FujiSysForFactory3.StartUpDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:FujiSysForFactory3.StartUpDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工場内部署人数dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工事別実績予定日付一覧dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工事別予算消費工程別dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工場工程dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工事別実績予定日付一覧表示用dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工事別予算消費グラフdtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工場内部署人数dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工事別実績予定日付一覧dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工事別予算消費工程別dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工場工程dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工事別実績予定日付一覧表示用dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工事別予算消費グラフdtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工場内部署人数dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工事別実績予定日付一覧dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工事別予算消費工程別dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工場工程dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工事別実績予定日付一覧表示用dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet.工事別予算消費グラフdtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSetTableAdapters.工場内部署人数dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSetTableAdapters.工事別実績予定日付一覧dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSetTableAdapters.工事別予算消費工程別dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSetTableAdapters.工場工程dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:FujiSysForFactory3.ConstructionWorkAndDateDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(FujiSysForFactory3.ConstructionWorkAndDateDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:FujiSysForFactory3.ConstructionWorkAndDateDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(FujiSysForFactory3.ConstructionWorkAndDateDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:FujiSysForFactory3.ConstructionWorkAndDateDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(FujiSysForFactory3.ConstructionWorkAndDateDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:FujiSysForFactory3.ConstructionWorkAndDateDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:FujiSysForFactory3.ConstructionWorkAndDateDataSetTableAdapters.TableAdapterManager.UpdateAll(FujiSysForFactory3.ConstructionWorkAndDateDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionWorkAndDateDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報工程dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報部署dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報現社員dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報工場部署人数dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報一覧dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報不適合dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報歴代社員dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報月一覧dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報人別月一覧dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報会社休日dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報工程予算dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報人実績一覧dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報人実績一覧サブdtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.月別工数集計部署一覧TOPdtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.月別工数集計部署別dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.月別工数集計表示用dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報工程dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報部署dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報現社員dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報工場部署人数dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報一覧dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報不適合dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報歴代社員dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報月一覧dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報人別月一覧dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報会社休日dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報工程予算dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報人実績一覧dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報人実績一覧サブdtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.月別工数集計部署一覧TOPdtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.月別工数集計部署別dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.月別工数集計表示用dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報工程dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報部署dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報現社員dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報工場部署人数dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報一覧dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報不適合dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報歴代社員dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報月一覧dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報人別月一覧dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報会社休日dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報工程予算dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報人実績一覧dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.日報人実績一覧サブdtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.月別工数集計部署一覧TOPdtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.月別工数集計部署別dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet.月別工数集計表示用dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.日報工程dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.日報部署dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.日報現社員dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.日報工場部署人数dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.日報一覧dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.日報不適合dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.日報歴代社員dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.日報月一覧dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.日報人別月一覧dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.日報会社休日dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.日報工程予算dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.日報人実績一覧dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.日報人実績一覧サブdtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.月別工数集計部署一覧TOPdtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.月別工数集計部署別dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:FujiSysForFactory3.DailyWorksDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(FujiSysForFactory3.DailyWorksDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:FujiSysForFactory3.DailyWorksDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(FujiSysForFactory3.DailyWorksDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:FujiSysForFactory3.DailyWorksDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(FujiSysForFactory3.DailyWorksDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:FujiSysForFactory3.DailyWorksDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:FujiSysForFactory3.DailyWorksDataSetTableAdapters.TableAdapterManager.UpdateAll(FujiSysForFactory3.DailyWorksDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:FujiSysForFactory3.DailyWorksDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場負荷工程予算dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場負荷日報dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場部署人数dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場実績人数dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場負荷ワークdtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場負荷集計dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場負荷工程予算dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場負荷日報dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場部署人数dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場実績人数dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場負荷ワークdtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場負荷集計dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場負荷工程予算dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場負荷日報dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場部署人数dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場実績人数dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場負荷ワークdtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet.工場負荷集計dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSetTableAdapters.工場負荷工程予算dtblTadp">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSetTableAdapters.工場負荷日報dtblTadp">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSetTableAdapters.工場部署人数dtblTadp">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSetTableAdapters.工場実績人数dtblTadp">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:FujiSysForFactory3.工場負荷DataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(FujiSysForFactory3.工場負荷DataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:FujiSysForFactory3.工場負荷DataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(FujiSysForFactory3.工場負荷DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:FujiSysForFactory3.工場負荷DataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(FujiSysForFactory3.工場負荷DataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:FujiSysForFactory3.工場負荷DataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:FujiSysForFactory3.工場負荷DataSetTableAdapters.TableAdapterManager.UpdateAll(FujiSysForFactory3.工場負荷DataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:FujiSysForFactory3.工場負荷DataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:FujiSysForFactory3.MyOrdersDataSet.注文書一覧dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.MyOrdersDataSet.注文書一覧dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.MyOrdersDataSet.注文書一覧dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.MyOrdersDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FujiSysForFactory3.MyOrdersDataSetTableAdapters.注文書一覧dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:FujiSysForFactory3.MyOrdersDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(FujiSysForFactory3.MyOrdersDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:FujiSysForFactory3.MyOrdersDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(FujiSysForFactory3.MyOrdersDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:FujiSysForFactory3.MyOrdersDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(FujiSysForFactory3.MyOrdersDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:FujiSysForFactory3.MyOrdersDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:FujiSysForFactory3.MyOrdersDataSetTableAdapters.TableAdapterManager.UpdateAll(FujiSysForFactory3.MyOrdersDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:FujiSysForFactory3.MyOrdersDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:FujiSysForFactory3.MyOrdersDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:FujiSysForFactory3.MyOrdersDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:FujiSysForFactory3.DialogsDataSet.会社休日dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DialogsDataSet.会社休日dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.DialogsDataSet.会社休日dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.DialogsDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FujiSysForFactory3.DialogsDataSetTableAdapters.会社休日dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:FujiSysForFactory3.DialogsDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(FujiSysForFactory3.DialogsDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:FujiSysForFactory3.DialogsDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(FujiSysForFactory3.DialogsDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:FujiSysForFactory3.DialogsDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(FujiSysForFactory3.DialogsDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:FujiSysForFactory3.DialogsDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:FujiSysForFactory3.DialogsDataSetTableAdapters.TableAdapterManager.UpdateAll(FujiSysForFactory3.DialogsDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:FujiSysForFactory3.DialogsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:FujiSysForFactory3.DialogsDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:FujiSysForFactory3.DialogsDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.受注営業担当dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事生管担当dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事一覧dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事詳細dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事取引先最新dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事製造範囲dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事工程予算dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事工程dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事部署dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事詳細簡易dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.出荷予定一覧2dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.出荷詳細dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事歴代社員dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.外業予定一覧dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.外業詳細dtblDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.受注営業担当dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事生管担当dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事一覧dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事詳細dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事取引先最新dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事製造範囲dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事工程予算dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事工程dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事部署dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事詳細簡易dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.出荷予定一覧2dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.出荷詳細dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事歴代社員dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.外業予定一覧dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.外業詳細dtblRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.受注営業担当dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事生管担当dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事一覧dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事詳細dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事取引先最新dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事製造範囲dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事工程予算dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事工程dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事部署dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事詳細簡易dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.出荷予定一覧2dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.出荷詳細dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.工事歴代社員dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.外業予定一覧dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet.外業詳細dtblRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.受注営業担当dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.工事生管担当dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.工事一覧dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.工事詳細dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.工事取引先最新dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.工事製造範囲dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.工事工程予算dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.工事工程dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.工事部署dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.工事詳細簡易dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.出荷予定一覧2dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.出荷詳細dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.工事歴代社員dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.外業予定一覧dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.外業詳細dtblTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:FujiSysForFactory3.ConstructionDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(FujiSysForFactory3.ConstructionDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:FujiSysForFactory3.ConstructionDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(FujiSysForFactory3.ConstructionDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:FujiSysForFactory3.ConstructionDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(FujiSysForFactory3.ConstructionDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:FujiSysForFactory3.ConstructionDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:FujiSysForFactory3.ConstructionDataSetTableAdapters.TableAdapterManager.UpdateAll(FujiSysForFactory3.ConstructionDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:FujiSysForFactory3.ConstructionDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:FujiSysForFactory3.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:FujiSysForFactory3.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:FujiSysForFactory3.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

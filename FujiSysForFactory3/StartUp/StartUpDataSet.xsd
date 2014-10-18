@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StartUpDataSet" targetNamespace="http://tempuri.org/StartUpDataSet.xsd" xmlns:mstns="http://tempuri.org/StartUpDataSet.xsd" xmlns="http://tempuri.org/StartUpDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="FujiSysConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FujiSysConnectionString (MySettings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.FujiSysForFactory3.My.MySettings.GlobalReference.Default.FujiSysConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="権限有社員パスdtblTableAdapter" GeneratorDataComponentClassName="権限有社員パスdtblTableAdapter" Name="権限有社員パスdtbl" UserDataComponentName="権限有社員パスdtblTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FujiSysConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT Ｊ社員権限.社員ＩＤ, Ｍパスワード.PASSWORD, Ｖ現社員.社員名
+FROM              Ｍパスワード INNER JOIN
+                        Ｊ社員権限 ON Ｍパスワード.社員ＩＤ = Ｊ社員権限.社員ＩＤ INNER JOIN
+                        Ｖ現社員 ON Ｍパスワード.社員ＩＤ = Ｖ現社員.社員ＩＤ
+ORDER BY       Ｊ社員権限.社員ＩＤ</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="社員ＩＤ" DataSetColumn="社員ＩＤ" />
+              <Mapping SourceColumn="PASSWORD" DataSetColumn="PASSWORD" />
+              <Mapping SourceColumn="社員名" DataSetColumn="社員名" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="FujiSysConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy権限800" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy権限800" GeneratorSourceName="FillBy権限800" GetMethodModifier="Public" GetMethodName="GetDataBy権限800" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy権限800" UserSourceName="FillBy権限800">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT DISTINCT Ｊ社員権限.社員ＩＤ, Ｍパスワード.PASSWORD, Ｖ現社員.社員名
+FROM              Ｍパスワード INNER JOIN
+                        Ｊ社員権限 ON Ｍパスワード.社員ＩＤ = Ｊ社員権限.社員ＩＤ INNER JOIN
+                        Ｖ現社員 ON Ｍパスワード.社員ＩＤ = Ｖ現社員.社員ＩＤ
+WHERE             (Ｊ社員権限.権限ＩＤ = N'800') OR
+                        (Ｊ社員権限.権限ＩＤ = N'990')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="社員権限画面dtblTableAdapter" GeneratorDataComponentClassName="社員権限画面dtblTableAdapter" Name="社員権限画面dtbl" UserDataComponentName="社員権限画面dtblTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FujiSysConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT            Ｊ社員権限.社員ＩＤ, Ｊ画面権限.画面ＩＤ, Ｍ画面.画面名, Ｍ画面.分類名, Ｍ画面.有効, Ｍ画面.表示順, Ｍ画面.ログイン表示権限
+FROM              Ｊ社員権限 INNER JOIN
+                        Ｊ画面権限 ON Ｊ社員権限.権限ＩＤ = Ｊ画面権限.権限ＩＤ INNER JOIN
+                        Ｍ画面 ON Ｊ画面権限.画面ＩＤ = Ｍ画面.画面ＩＤ
+WHERE              (Ｍ画面.有効 = 1)
+ORDER BY       Ｍ画面.分類名, Ｍ画面.表示順</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="社員ＩＤ" DataSetColumn="社員ＩＤ" />
+              <Mapping SourceColumn="画面ＩＤ" DataSetColumn="画面ＩＤ" />
+              <Mapping SourceColumn="画面名" DataSetColumn="画面名" />
+              <Mapping SourceColumn="分類名" DataSetColumn="分類名" />
+              <Mapping SourceColumn="有効" DataSetColumn="有効" />
+              <Mapping SourceColumn="表示順" DataSetColumn="表示順" />
+              <Mapping SourceColumn="ログイン表示権限" DataSetColumn="ログイン表示権限" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="FujiSysConnectionString (MySettings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy社員ＩＤ" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy社員ＩＤ" GeneratorSourceName="FillBy社員ＩＤ" GetMethodModifier="Public" GetMethodName="GetDataBy社員ＩＤ" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy社員ＩＤ" UserSourceName="FillBy社員ＩＤ">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT            Ｊ社員権限.社員ＩＤ, Ｊ画面権限.画面ＩＤ, Ｍ画面.画面名, Ｍ画面.分類名, Ｍ画面.有効, Ｍ画面.表示順, Ｍ画面.ログイン表示権限
+FROM              Ｊ社員権限 INNER JOIN
+                        Ｊ画面権限 ON Ｊ社員権限.権限ＩＤ = Ｊ画面権限.権限ＩＤ INNER JOIN
+                        Ｍ画面 ON Ｊ画面権限.画面ＩＤ = Ｍ画面.画面ＩＤ
+WHERE              (Ｍ画面.有効 = 1) AND (Ｊ社員権限.社員ＩＤ = @StaffID)
+ORDER BY       Ｍ画面.分類名, Ｍ画面.表示順</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="StaffID" ColumnName="社員ＩＤ" DataSourceName="FujiSys.Fuji.Ｊ社員権限" DataTypeServer="nvarchar(4)" DbType="String" Direction="Input" ParameterName="@StaffID" Precision="0" ProviderType="NVarChar" Scale="0" Size="4" SourceColumn="社員ＩＤ" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StartUpDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="StartUpDataSet" msprop:Generator_UserDSName="StartUpDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="権限有社員パスdtbl" msprop:Generator_TableClassName="権限有社員パスdtblDataTable" msprop:Generator_TableVarName="table権限有社員パスdtbl" msprop:Generator_RowChangedName="権限有社員パスdtblRowChanged" msprop:Generator_TablePropName="権限有社員パスdtbl" msprop:Generator_RowDeletingName="権限有社員パスdtblRowDeleting" msprop:Generator_RowChangingName="権限有社員パスdtblRowChanging" msprop:Generator_RowEvHandlerName="権限有社員パスdtblRowChangeEventHandler" msprop:Generator_RowDeletedName="権限有社員パスdtblRowDeleted" msprop:Generator_RowClassName="権限有社員パスdtblRow" msprop:Generator_UserTableName="権限有社員パスdtbl" msprop:Generator_RowEvArgName="権限有社員パスdtblRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="社員_xFF29__xFF24_" msprop:Generator_ColumnVarNameInTable="column社員ＩＤ" msprop:Generator_ColumnPropNameInRow="社員ＩＤ" msprop:Generator_ColumnPropNameInTable="社員ＩＤColumn" msprop:Generator_UserColumnName="社員ＩＤ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PASSWORD" msprop:Generator_ColumnVarNameInTable="columnPASSWORD" msprop:Generator_ColumnPropNameInRow="PASSWORD" msprop:Generator_ColumnPropNameInTable="PASSWORDColumn" msprop:Generator_UserColumnName="PASSWORD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="社員名" msprop:Generator_ColumnVarNameInTable="column社員名" msprop:Generator_ColumnPropNameInRow="社員名" msprop:Generator_ColumnPropNameInTable="社員名Column" msprop:Generator_UserColumnName="社員名">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="社員権限画面dtbl" msprop:Generator_TableClassName="社員権限画面dtblDataTable" msprop:Generator_TableVarName="table社員権限画面dtbl" msprop:Generator_RowChangedName="社員権限画面dtblRowChanged" msprop:Generator_TablePropName="社員権限画面dtbl" msprop:Generator_RowDeletingName="社員権限画面dtblRowDeleting" msprop:Generator_RowChangingName="社員権限画面dtblRowChanging" msprop:Generator_RowEvHandlerName="社員権限画面dtblRowChangeEventHandler" msprop:Generator_RowDeletedName="社員権限画面dtblRowDeleted" msprop:Generator_RowClassName="社員権限画面dtblRow" msprop:Generator_UserTableName="社員権限画面dtbl" msprop:Generator_RowEvArgName="社員権限画面dtblRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="社員_xFF29__xFF24_" msprop:Generator_ColumnVarNameInTable="column社員ＩＤ" msprop:Generator_ColumnPropNameInRow="社員ＩＤ" msprop:Generator_ColumnPropNameInTable="社員ＩＤColumn" msprop:Generator_UserColumnName="社員ＩＤ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="画面_xFF29__xFF24_" msprop:Generator_ColumnVarNameInTable="column画面ＩＤ" msprop:Generator_ColumnPropNameInRow="画面ＩＤ" msprop:Generator_ColumnPropNameInTable="画面ＩＤColumn" msprop:Generator_UserColumnName="画面ＩＤ">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="4" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="画面名" msprop:Generator_ColumnVarNameInTable="column画面名" msprop:Generator_ColumnPropNameInRow="画面名" msprop:Generator_ColumnPropNameInTable="画面名Column" msprop:Generator_UserColumnName="画面名" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="分類名" msprop:Generator_ColumnVarNameInTable="column分類名" msprop:Generator_ColumnPropNameInRow="分類名" msprop:Generator_ColumnPropNameInTable="分類名Column" msprop:Generator_UserColumnName="分類名" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="有効" msprop:Generator_ColumnVarNameInTable="column有効" msprop:Generator_ColumnPropNameInRow="有効" msprop:Generator_ColumnPropNameInTable="有効Column" msprop:Generator_UserColumnName="有効" type="xs:int" minOccurs="0" />
+              <xs:element name="表示順" msprop:Generator_ColumnVarNameInTable="column表示順" msprop:Generator_ColumnPropNameInRow="表示順" msprop:Generator_ColumnPropNameInTable="表示順Column" msprop:Generator_UserColumnName="表示順" type="xs:int" minOccurs="0" />
+              <xs:element name="ログイン表示権限" msprop:Generator_ColumnVarNameInTable="columnログイン表示権限" msprop:Generator_ColumnPropNameInRow="ログイン表示権限" msprop:Generator_ColumnPropNameInTable="ログイン表示権限Column" msprop:Generator_UserColumnName="ログイン表示権限" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:権限有社員パスdtbl" />
+      <xs:field xpath="mstns:社員_xFF29__xFF24_" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

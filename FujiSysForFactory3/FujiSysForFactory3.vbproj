@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9ABBEFB-6F53-4F6E-8E9B-89141EBBDD51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>FujiSysForFactory3.My.MyApplication</StartupObject>
+    <RootNamespace>FujiSysForFactory3</RootNamespace>
+    <AssemblyName>FujiSysForFactory3</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>\\SVR1002\FujiSysForFactory\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>FujiSysForFactory</ProductName>
+    <PublisherName>開発室 岡部</PublisherName>
+    <SuiteName>FujiSystems</SuiteName>
+    <ApplicationRevision>36</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>FujiSysForFactory3.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>FujiSysForFactory3.xml</DocumentationFile>
+    <NoWarn>
+    </NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>CA2CE74EC689F535A430F66A1B87DCAD59843F8F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>FujiSysForFactory3_一時キー.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Construction\ConstructionDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConstructionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Construction\ConstructionDataSet.vb">
+      <DependentUpon>ConstructionDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Construction\ConstructionWorkAndDateDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConstructionWorkAndDateDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Construction\出荷予定一覧Form.Designer.vb">
+      <DependentUpon>出荷予定一覧Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Construction\出荷予定一覧Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Construction\出荷詳細Form.Designer.vb">
+      <DependentUpon>出荷詳細Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Construction\出荷詳細Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Construction\外業予定一覧Form.Designer.vb">
+      <DependentUpon>外業予定一覧Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Construction\外業予定一覧Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Construction\外業詳細Form.Designer.vb">
+      <DependentUpon>外業詳細Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Construction\外業詳細Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Construction\工事一覧Form.Designer.vb">
+      <DependentUpon>工事一覧Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Construction\工事一覧Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Construction\工事別予算消費Form.Designer.vb">
+      <DependentUpon>工事別予算消費Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Construction\工事別予算消費Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Construction\工事別日程予算一覧Form.Designer.vb">
+      <DependentUpon>工事別日程予算一覧Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Construction\工事別日程予算一覧Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Construction\工事詳細Form.Designer.vb">
+      <DependentUpon>工事詳細Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Construction\工事詳細Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Construction\工程予算Form.Designer.vb">
+      <DependentUpon>工程予算Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Construction\工程予算Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyWorks\DailyWorksDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DailyWorksDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DailyWorks\NumberOfPeopleByPartClass.vb" />
+    <Compile Include="DailyWorks\工事別日報予算Form.Designer.vb">
+      <DependentUpon>工事別日報予算Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DailyWorks\工事別日報予算Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyWorks\日報一覧Form.Designer.vb">
+      <DependentUpon>日報一覧Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DailyWorks\日報一覧Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyWorks\日報月一覧Form.Designer.vb">
+      <DependentUpon>日報月一覧Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DailyWorks\日報月一覧Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyWorks\月別日報集計表Form.Designer.vb">
+      <DependentUpon>月別日報集計表Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DailyWorks\月別日報集計表Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ConstructionCompleteDialog.Designer.vb">
+      <DependentUpon>ConstructionCompleteDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ConstructionCompleteDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ConstructionDialog.Designer.vb">
+      <DependentUpon>ConstructionDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\ConstructionDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DateInputDialog.Designer.vb">
+      <DependentUpon>DateInputDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\DateInputDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DialogsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DialogsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\MonthInputDialog.Designer.vb">
+      <DependentUpon>MonthInputDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\MonthInputDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\OutworExistencekDialog.Designer.vb">
+      <DependentUpon>OutworExistencekDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\OutworExistencekDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\HolidaysClass.vb" />
+    <Compile Include="General\IFFRMOPENTHENCLOSE.vb" />
+    <Compile Include="General\InputChkConstructionNoClass.vb" />
+    <Compile Include="General\ShowFormNameToMenuClass.vb" />
+    <Compile Include="LoadAndTotal\工場負荷.Designer.vb">
+      <DependentUpon>工場負荷.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoadAndTotal\工場負荷.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadAndTotal\工場負荷DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>工場負荷DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyOrders\MyOrdersDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyOrdersDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MyOrders\注文書一覧Form.Designer.vb">
+      <DependentUpon>注文書一覧Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MyOrders\注文書一覧Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartUp\ClickItemOpen.vb" />
+    <Compile Include="StartUp\LogInForm.Designer.vb">
+      <DependentUpon>LogInForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StartUp\LogInForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartUp\MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StartUp\MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartUp\StartUpDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StartUpDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StartUp\StartUpDataSet.vb">
+      <DependentUpon>StartUpDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Construction\出荷予定一覧Form.resx">
+      <DependentUpon>出荷予定一覧Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Construction\出荷詳細Form.resx">
+      <DependentUpon>出荷詳細Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Construction\外業予定一覧Form.resx">
+      <DependentUpon>外業予定一覧Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Construction\外業詳細Form.resx">
+      <DependentUpon>外業詳細Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Construction\工事一覧Form.resx">
+      <DependentUpon>工事一覧Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Construction\工事別予算消費Form.resx">
+      <DependentUpon>工事別予算消費Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Construction\工事別日程予算一覧Form.resx">
+      <DependentUpon>工事別日程予算一覧Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Construction\工事詳細Form.resx">
+      <DependentUpon>工事詳細Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Construction\工程予算Form.resx">
+      <DependentUpon>工程予算Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyWorks\工事別日報予算Form.resx">
+      <DependentUpon>工事別日報予算Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyWorks\日報一覧Form.resx">
+      <DependentUpon>日報一覧Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyWorks\日報月一覧Form.resx">
+      <DependentUpon>日報月一覧Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyWorks\月別日報集計表Form.resx">
+      <DependentUpon>月別日報集計表Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ConstructionCompleteDialog.resx">
+      <DependentUpon>ConstructionCompleteDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ConstructionDialog.resx">
+      <DependentUpon>ConstructionDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DateInputDialog.resx">
+      <DependentUpon>DateInputDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\MonthInputDialog.resx">
+      <DependentUpon>MonthInputDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\OutworExistencekDialog.resx">
+      <DependentUpon>OutworExistencekDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadAndTotal\工場負荷.resx">
+      <DependentUpon>工場負荷.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyOrders\注文書一覧Form.resx">
+      <DependentUpon>注文書一覧Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartUp\LogInForm.resx">
+      <DependentUpon>LogInForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartUp\MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Construction\ConstructionDataSet.xsc">
+      <DependentUpon>ConstructionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Construction\ConstructionDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConstructionDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Construction\ConstructionDataSet.xss">
+      <DependentUpon>ConstructionDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Construction\ConstructionWorkAndDateDataSet.xsc">
+      <DependentUpon>ConstructionWorkAndDateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Construction\ConstructionWorkAndDateDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ConstructionWorkAndDateDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Construction\ConstructionWorkAndDateDataSet.xss">
+      <DependentUpon>ConstructionWorkAndDateDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DailyWorks\DailyWorksDataSet.xsc">
+      <DependentUpon>DailyWorksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DailyWorks\DailyWorksDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DailyWorksDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DailyWorks\DailyWorksDataSet.xss">
+      <DependentUpon>DailyWorksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dialogs\DialogsDataSet.xsc">
+      <DependentUpon>DialogsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Dialogs\DialogsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DialogsDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Dialogs\DialogsDataSet.xss">
+      <DependentUpon>DialogsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FujiSysForFactory3_一時キー.pfx" />
+    <None Include="LoadAndTotal\工場負荷DataSet.xsc">
+      <DependentUpon>工場負荷DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LoadAndTotal\工場負荷DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>工場負荷DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LoadAndTotal\工場負荷DataSet.xss">
+      <DependentUpon>工場負荷DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="MyOrders\MyOrdersDataSet.xsc">
+      <DependentUpon>MyOrdersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MyOrders\MyOrdersDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MyOrdersDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="MyOrders\MyOrdersDataSet.xss">
+      <DependentUpon>MyOrdersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StartUp\StartUpDataSet.xsc">
+      <DependentUpon>StartUpDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="StartUp\StartUpDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StartUpDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="StartUp\StartUpDataSet.xss">
+      <DependentUpon>StartUpDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Graf\Fujisys.ico" />
+    <Content Include="Graf\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
